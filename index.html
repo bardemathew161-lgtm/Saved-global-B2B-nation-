@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saved Global B2B Nations</title>
+    <meta
+      name="description"
+      content="Discover the future of business with SAVED GLOBAL B2B NATIONS."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <span>Saved Global B2B Nations</span>
+        </div>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#platform">Platform</a>
+          <a href="#solutions">Solutions</a>
+          <a href="#growth">Growth</a>
+          <button class="btn btn-small" id="open-login-btn" type="button">Login</button>
+          <button class="btn btn-small btn-dark-toggle" id="theme-toggle" type="button">Dark mode</button>
+          <button class="icon-button" id="notification-trigger" type="button" aria-label="Notifications">
+            <span>🔔</span>
+            <span class="badge" id="notification-count">4</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    
+<main>
+     <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Discover the Future of Business</p>
+            <h1>Connect your business with a powerful global ecosystem.</h1>
+            <p class="hero-text">
+              Meet businesses, customers, suppliers, and professionals on a high-impact
+              B2B platform built for sales, marketing, communication, payments, and
+              customer relationships.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn">Launch Your Network</a>
+              <a href="#platform" class="btn btn-light">Explore Platform</a>
+            </div>
+            <ul class="hero-points">
+              <li>Unified sales and customer data</li>
+              <li>Streamlined payments and collaboration</li>
+              <li>Growth-ready community engagement</li>
+            </ul>
+          </div>
+
+          <div class="hero-card">
+            <div class="mini-card">
+              <div>
+                <strong>1.4K+</strong>
+                <span>Active partners</span>
+              </div>
+              <div>
+                <strong>96%</strong>
+                <span>Retention rate</span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-header">
+                <span>Business Command Center</span>
+                <span class="status">Live</span>
+              </div>
+              <div class="metric-row">
+                <div>
+                  <span>Sales</span>
+                  <strong>$2.8M</strong>
+                </div>
+                <div>
+                  <span>Orders</span>
+                  <strong>184</strong>
+                </div>
+              </div>
+              <div class="chart"></div>
+              <div class="activity-list">
+                <div><span>Lead follow-up</span><strong>14 new</strong></div>
+                <div><span>Supplier requests</span><strong>9 pending</strong></div>
+                <div><span>Client renewals</span><strong>21 due</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="platform" class="section">
+        <div class="container dashboard-grid">
+          <div class="dashboard-card search-card">
+            <div class="section-heading compact">
+              <p class="eyebrow">Business Search</p>
+              <h2>Find partners, buyers, and suppliers</h2>
+            </div>
+            <label class="field-label" for="business-search">Search businesses</label>
+            <input id="business-search" class="input" type="search" placeholder="Search by company, niche, or region" />
+            <div id="business-results" class="result-list"></div>
+          </div>
+
+          <div class="dashboard-card chat-card">
+            <div class="section-heading compact">
+              <p class="eyebrow">AI Chat Bot</p>
+              <h2>Instant business guidance</h2>
+            </div>
+            <div id="chat-log" class="chat-log"></div>
+            <form id="chat-form" class="chat-form">
+              <input id="chat-input" class="input" type="text" placeholder="Ask the AI assistant..." required />
+              <button class="btn btn-small" type="submit">Send</button>
+            </form>
+          </div>
+
+          <div class="dashboard-card notifications-card">
+            <div class="section-heading compact">
+              <p class="eyebrow">Notifications</p>
+              <h2>Recent activity</h2>
+            </div>
+            <div id="notification-panel" class="notification-list"></div>
+          </div>
+
+          <div class="dashboard-card form-card" id="contact">
+            <div class="section-heading compact">
+              <p class="eyebrow">Contact &amp; Validation</p>
+              <h2>Request a strategy call</h2>
+            </div>
+            <form id="lead-form" novalidate>
+              <div class="input-grid">
+                <div>
+                  <label class="field-label" for="name">Full name</label>
+                  <input id="name" class="input" type="text" required />
+                </div>
+                <div>
+                  <label class="field-label" for="email">Work email</label>
+                  <input id="email" class="input" type="email" required />
+                </div>
+                <div>
+                  <label class="field-label" for="company">Company</label>
+                  <input id="company" class="input" type="text" required />
+                </div>
+                <div>
+                  <label class="field-label" for="message">Project details</label>
+                  <textarea id="message" class="input" rows="4" required></textarea>
+                </div>
+              </div>
+              <p id="form-message" class="form-message" aria-live="polite"></p>
+              <button class="btn" type="submit">Submit Request</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="solutions" class="section section-alt">
+        <div class="container split-layout">
+          <div>
+            <p class="eyebrow">Solutions</p>
+            <h2>Built for ambitious teams and global opportunities.</h2>
+            <p>
+              Save time, expand reach, and build stronger channels with a unified business platform designed to unify sales, payments, and collaboration across every market you serve.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <article class="feature-card">
+              <h3>Cross-border outreach</h3>
+              <p>Source reliable partners and buyers across key markets with smart discovery tools.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Smarter workflow automation</h3>
+              <p>Keep leads, follow-ups, and negotiations organized from one command center.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Integrated communication</h3>
+              <p>Move from proposal to payment with a connected customer journey across teams.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Performance visibility</h3>
+              <p>Track pipeline health, order flow, and growth activity in real time.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="growth" class="section">
+        <div class="container cta-box">
+          <div>
+            <p class="eyebrow">Growth Engine</p>
+            <h2>Turn attention into lasting business momentum.</h2>
+          </div>
+          <a href="#contact" class="btn">Book a Demo</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <strong>Saved Global B2B Nations</strong>
+          <p>Connecting businesses, customers, suppliers, and professionals worldwide.</p>
+        </div>
+        <p>© <span id="year"></span> Saved Global B2B Nations</p>
+      </div>
+    </footer>
+
+    <div id="login-modal" class="modal hidden" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="login-title">
+        <div class="login-intro">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <p class="eyebrow">Saved Global B2B Nations</p>
+          <h2>Welcome back to your business network.</h2>
+          <p>Sign in to manage opportunities, partners, conversations, and growth activity from one place.</p>
+          <ul class="login-benefits">
+            <li>Track leads and partner requests</li>
+            <li>Keep your business activity in sync</li>
+            <li>Collaborate securely across markets</li>
+          </ul>
+        </div>
+        <div class="login-form-panel">
+          <div class="modal-header">
+            <div>
+              <p class="eyebrow">Member access</p>
+              <h3 id="login-title">Log in</h3>
+            </div>
+            <button id="close-login-btn" class="close-btn" type="button" aria-label="Close login">
+              ×
+            </button>
+          </div>
+          <form id="login-form">
+            <label class="field-label" for="login-email">Work email</label>
+            <input id="login-email" class="input" type="email" autocomplete="email" placeholder="name@company.com" required />
+            <label class="field-label" for="login-password">Password</label>
+            <input id="login-password" class="input" type="password" autocomplete="current-password" placeholder="Enter your password" required />
+            <div class="login-options">
+              <label><input type="checkbox" /> Remember me</label>
+              <a href="#contact" id="forgot-password-link">Need help signing in?</a>
+            </div>
+            <p id="login-message" class="form-message" aria-live="polite"></p>
+            <button class="btn login-submit" type="submit">Log in to dashboard</button>
+          </form>
+          <p class="login-demo">Demo: <strong>demo@savedglobal.test</strong> / <strong>DemoPass123!</strong></p>
+          <p class="login-footer">New to the platform? <a href="#contact" id="request-access-link">Request access</a></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
